@@ -1,5 +1,6 @@
 variable "aws-region" {}
 variable "env" {}
+variable "key-name" {}
 variable "cluster-name" {}
 variable "vpc-cidr-block" {}
 variable "vpc-name" {}

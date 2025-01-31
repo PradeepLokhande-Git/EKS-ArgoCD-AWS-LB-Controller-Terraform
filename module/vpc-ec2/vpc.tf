@@ -153,7 +153,7 @@ resource "aws_security_group" "eks-cluster-sg" {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] // It should be specific IP range
+    cidr_blocks = ["104.30.176.1/32"] // It should be specific IP range
   }
 
   egress {
@@ -178,7 +178,7 @@ resource "aws_security_group" "ec2-sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] // It should be specific IP range
+    cidr_blocks = ["104.30.176.1/32"] // It should be specific IP range
   }
 
   egress {

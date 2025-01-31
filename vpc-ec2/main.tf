@@ -7,6 +7,7 @@ module "vpc-ec2" {
   source = "../module/vpc-ec2"
 
   env                   = var.env
+  key-name               = var.key-name
   cluster-name          = "${local.env}-${local.org}-${var.cluster-name}"
   cidr-block            = var.vpc-cidr-block
   vpc-name              = "${local.env}-${local.org}-${var.vpc-name}"
